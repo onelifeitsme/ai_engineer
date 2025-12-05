@@ -4,6 +4,7 @@ from pathlib import Path
 
 class Settings(BaseSettings):
     DATABASE_URL: str
+    MISTRAL_API_KEY: str
 
     @property
     def DATABASE_URL_asyncpg(self):
